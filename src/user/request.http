@@ -1,0 +1,60 @@
+###create a new user
+POST http://localhost:3000/auth/signup
+Content-Type:  application/json
+
+{
+    "email" : "radiowner1@mail.bg",
+    "password" : "1234",
+    "username" : "radiown"
+}
+
+###sign in as existing user
+POST http://localhost:3000/auth/signin
+Content-Type:  application/json
+
+{
+    "email" : "radiowner@mail.bg",
+    "password" : "1234"
+    
+}
+
+### get the currently sign in user 
+
+
+### sign out
+
+POST http://localhost:3000/auth/signout
+### find a user 
+GET http://localhost:3000/auth/be669cc6-4e44-40f2-9e4f-f983b3372252
+### find all users with a given email
+GET  http://localhost:3000/auth?email=rererrew@mail.com
+
+###delete a user 
+
+DELETE  http://localhost:3000/auth/2323232
+
+###update a user 
+
+PATCH  http://localhost:3000/auth/969275b5-48c7-49c6-bc8b-18ef9d501829
+
+Content-Type: application/json
+
+{
+    "email" : "replacedemail@abv.bg"
+}
+
+
+###add new farm 
+http://localhost:3000/farm/add-farm
+Content-Type:  application/json
+
+
+{
+  "name": "Farda",
+  "location": "dobrich"
+}
+
+
+### req profile
+
+PATCH    http://localhost:3000/auth/969275b5-48c7-49c6-bc8b-18ef9d501829
